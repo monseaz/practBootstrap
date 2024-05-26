@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/icono.png">
+</head>
+<body>
+    <h1>Hello esta es la práctica de Bootstrap</h1> <br>
+    <div class="container text-center"><!-- centrar texto  -->
+        <!-- CREAR COLUMNAS -->
+        <div class="row">
+        <div class="col-6">
+            <!-- Columna1 // col-6 establece el ancho de la columna-->
+            Columna 1
+        </div>
+        <div class="col-6">
+            Columna 2
+        </div>
+        <div class="col">
+            Columna 3
+        </div>
+        <div class="col">
+            Columna 4
+        </div>
+        <div class="col">
+            Columna 5
+        </div>
+        <div class="col">
+            Columna 6
+        </div>
+        <div class="col">
+            Columna 7
+        </div>
+        </div>
+        <br>
+        <div class="alert alert-danger" role="alert">
+            PELÍCULAS FAVORITAS
+          </div>
+    </div>
+
+    <!-- CARRUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/img/increibles.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/monster.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/toystory.jpeg" class="d-block w-100" alt="...">
+      </div>
+      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+      <br>
+      
+    <!-- GRUPO DE LISTA-Scrollspy -->  
+    <div class="row">
+        <div class="col-4">
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Los increíbles</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Monsters, Inc.</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Toy Story</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+            <h4 id="list-item-1">Los increíbles</h4>
+            <p>De los creadores de Toy Story y Ratatouille llega esta graciosísima aventura llena de acción sobre una familia aparentemente común que tiene un secreto. Conocidos mundialmente como el Sr. Increíble y como la Mujer Elástica, Bob Parr y su esposa Helen combaten el crimen diariamente. Con ganas de volver a la acción, Bob tiene la oportunidad de volver cuando lo convocan a una isla misteriosa para una misión secreta. Pronto descubrirá que necesitará a su familia para salvar al mundo de la destrucción.</p>
+            <p>Duración:
+              1 h 56 min
+              <br>Fecha de estreno:
+              2004
+              <br>Género:
+              Familiar Animación Superhéroes Acción y aventura
+              <br>Clasificación:
+              PG
+              <br>Dirigido por:
+              Brad Bird
+            </p>
+            <h4 id="list-item-2">Monsters, Inc.</h4>
+            <p>El amable Sulley (John Goodman) y su amigo ocurrente Mike Wazowski (Billy Crystal) forman el mejor equipo de sustos en MONSTERS, INC., la fábrica procesadora de gritos en Monstrópolis. Cuando una niña llamada Boo deambula en su mundo, son los monstruos los que se asustan. Depende de Sulley y Mike esconderla y regresarla a su hogar.</p>
+            <p>Duración:
+              1 h 32 min
+              <br>Fecha de estreno:
+              2001
+              <br>Género:
+              Familiar Comedia Animación Amistad
+              <br>Clasificación:
+              G
+              <br>Dirigido por:
+              Pete Docter
+            </p>
+            <h4 id="list-item-3">Toy Story</h4>
+            <p>Ambientado en un mundo donde los juguetes tienen vida propia, esta historia está vista a través de dos juguetes: Woody (Tom Hanks), un vaquero parlante a cuerda, y Buzz Lightyear (Tim Allen), una heroica figura de acción espacial. El cómico dúo finalmente aprende a dejar de lado sus diferencias cuando se separan de su dueño, Andy, y se encuentran en una desopilante misión llena de aventuras... donde solo sobrevivirán si forman una alianza.</p>
+            <p>Duración:
+              1 h 24 min
+              <br>Fecha de estreno:
+              1995
+              <br>Género:
+              Familiar Comedia Animación Acción Aventura y Amistad
+              <br>Clasificación:
+              G
+              <br>Dirigido por:
+              John Lasseter
+            </p>
+          </div>
+        </div>
+      </div>  
+          
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
